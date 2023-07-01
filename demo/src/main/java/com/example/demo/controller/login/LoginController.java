@@ -16,7 +16,7 @@ public class LoginController {
 
     @PostMapping("/login")
     public ResponseEntity<Integer> login(LoginRequest loginRequest) {
-        System.out.println("로그인을 시작하겠습니다.");
+		System.out.println("로그인을 합니다.");
         return loginService.login(loginRequest);
     }
 }
